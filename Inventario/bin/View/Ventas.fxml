@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Sistema de Control de Inventario y Ventas" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="Controller.VentaController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="232.0" layoutY="45.0" text="Registro de Ventas ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="104.0" text="Nombre del producto">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="381.0" layoutY="104.0" text="Precio del Producto">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="228.0" layoutY="187.0" text="Cantidad del Producto ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnVender" layoutX="182.0" layoutY="286.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="235.0" text="Vender" onAction="#venderProducto" />
+            <TextField fx:id="txtNombreProducto" layoutX="82.0" layoutY="143.0" promptText="Ej: Coco Rico" />
+            <TextField fx:id="txtPrecioProducto" layoutX="367.0" layoutY="143.0" promptText="Ej: 30" />
+            <TextField fx:id="txtCantidad" layoutX="225.0" layoutY="228.0" promptText="Ej: 2" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
